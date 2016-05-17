@@ -9,7 +9,8 @@ const db = require('./datastore.js');
 const app = express();
 
 app.set('port', process.env.PORT || 3333);
-app.use(express.static('public', { index: false }));
+app.use(express.static(__dirname + '/../public'));
+// app.use(express.static('public', { index: false }));
 app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'combined'));
 app.use(bodyParser.json());
 app.use(cors());

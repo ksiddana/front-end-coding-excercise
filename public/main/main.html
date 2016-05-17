@@ -1,0 +1,46 @@
+<br />
+<br />
+<br />
+<div class="container main-content">
+  <div class="panel panel-default">
+
+      <div class="row">
+      <div class="col-md-12">
+        <form class="form-inline well well-sm">
+          <span class="glyphicon glyphicon-search"></span>
+
+          <div class="form-group">
+              <input type="text"
+                     class="form-control"
+                     ng-model="title"
+                     placeholder="Filter..."
+                  />
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="row">
+  
+      <div class="col-md-4">
+        <div class="fakedata" 
+        ng-repeat="data in fakeData | filter:title"
+        ng-click="selectData(data, $index)">
+          <p>{{data.title}}</p>
+        </div>
+      </div>
+        
+
+      <div class="col-md-8">
+            <div class="panel-body" ng-show="selectedData">
+              <dl>
+                <h3>{{selectedData.title}}</h3>
+                <dd>{{selectedData.body}}</dd>
+              </dl>
+            </div>
+      </div>
+
+    </div>
+  </div>
+</div>

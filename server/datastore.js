@@ -1,3 +1,5 @@
+'use strict';
+
 const merge = require('lodash/merge');
 const cloneDeep = require('lodash/cloneDeep');
 const values = require('lodash/values');

@@ -1,0 +1,27 @@
+{
+  "name": "client",
+  "homepage": "https://github.com/ksiddana/front-end-coding-excercise",
+  "authors": [
+    "Karun Siddana <ksiddana@gmail.com>"
+  ],
+  "description": "Coding Exercise",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angularjs-slider": "~2.4.1",
+    "underscore": "~1.8.3",
+    "angular-animate": "~1.4.8",
+    "angular-mocks": "~1.5.0",
+    "jquery": "~2.2.2"
+  }
+}
