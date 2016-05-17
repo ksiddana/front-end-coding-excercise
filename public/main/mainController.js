@@ -10,7 +10,7 @@ angular.module('truStar.main', ['MainServices'])
     }
 
   $scope.selectedIndex = null;
-  $scope.selectedData = 'No Report Selected';
+  $scope.selectedData = null;
 
   $scope.selectData = function (data, index) {
     $scope.selectedIndex = index;

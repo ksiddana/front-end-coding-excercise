@@ -5,9 +5,11 @@ angular.module("truStar", ['ui.router',
 .config(['$stateProvider','$urlRouterProvider', 
   function($stateProvider, $urlRouterProvider) {
   
+  $urlRouterProvider.otherwise('/main');
+
   $stateProvider
 
-    .state('/main', {
+    .state('main', {
       url: '/main',
       templateUrl: '/main/main.html',
       controller: 'MainController'

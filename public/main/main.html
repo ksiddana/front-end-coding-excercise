@@ -1,7 +1,7 @@
 <br />
 <br />
 <br />
-<div class="container main-content">
+<div class="container-fluid">
   <div class="panel panel-default">
 
       <div class="row">
@@ -33,11 +33,14 @@
         
 
       <div class="col-md-8">
-            <div class="panel-body" ng-show="selectedData">
+            <div class="panel-body">
               <dl>
                 <h3>{{selectedData.title}}</h3>
                 <dd>{{selectedData.body}}</dd>
               </dl>
+            </div>
+            <div class="report" ng-show='!selectedData'>
+              <h1>No Report Selected</h1>
             </div>
       </div>
 

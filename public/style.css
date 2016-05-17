@@ -1,5 +1,4 @@
 body {
-  padding-top: 20px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -8,26 +7,34 @@ img {
   height: 100%;
 }
 
-.login-image {
-  position: absolute;
+a:hover {
+  text-decoration: none;
+  color: #000;
 }
 
-.picture-list {
-  height: 100%;
-  width: 100%;
-  padding: 0 1px 1px 0 !important;
-  margin: 0 !important;
-  transition all 1s ease-in-out;
+.container-fluid {
+  margin: 0 auto; 
 }
 
-.picture-list:hover{
-  transform: scale(1.5);
+.nav-pills {
+  font-size: 1.0em;
+  background-color: #364958;
+  color: #FFF;
 }
 
-.search-bar-box {
-  width: auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
+.nav > li > a {
+  background-color: #364958;
+}
+
+.primary-footer {
+  height: 50px;
+  background-color: #364958;
+  text-align: center;
+  color: #FFF;
+}
+
+.primary-footer p {
+  padding-top: 15px;
 }
 
 

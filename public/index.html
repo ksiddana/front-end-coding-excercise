@@ -23,27 +23,19 @@
   </head>
 
   <body>
-    <div class="container">
-    
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-          <a class="navbar-brand" href="#">TruSTAR</a>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a ui-sref="main">Home</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    
-    </div>  
+    <div class="container fluid">
+      <ul class="nav nav-pills navbar-fixed-top">
+        <li><a class="navbar-brand" href="#/">TruSTAR</a></li>
+        <li><a ui-sref="main">Home</a></li>
+      </ul>
+    </div>
 
     <div ui-view></div>
 
     <!-- Site footer -->
-    <footer class="footer">
-      <p>&copy; 2016 Company, Inc.</p>
-    </footer>
+    <div class="primary-footer">
+        <p>This site was built and designed by Karun Siddana</p>    
+    </div>
     
      <!-- ANGULAR SERVICES -->
     <script src="main/mainServices.js"></script>
