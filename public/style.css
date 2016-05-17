@@ -29,9 +29,6 @@ a:hover {
 .list-data {
   padding: 2px 5px;
   border-right: 2px solid #EFEFEF;
-}
-
-.list-data p {
   border-bottom: 2px solid #EFEFEF;
 }
 

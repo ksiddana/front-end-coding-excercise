@@ -22,6 +22,9 @@
         <div class="col-md-4">
           <div class="list-data"
           ng-repeat="data in fakeData | orderBy:'-created' | filter: titleFilter"
+          ng-style="{
+         'background-color': $index == selectedIndex ? 'lightgray' : ''
+         }"
           ng-click="selectData(data, $index)">
             <p>{{data.title}}</p>
           </div>
