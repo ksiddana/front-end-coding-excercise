@@ -1,6 +1,3 @@
-<br />
-<br />
-<br />
 <div class="container-fluid">
   <div class="panel panel-default">
 
@@ -12,9 +9,9 @@
           <div class="form-group">
               <input type="text"
                      class="form-control"
-                     ng-model="title"
+                     ng-model="search"
                      placeholder="Filter..."
-                  />
+              />
           </div>
         </form>
       </div>
@@ -22,26 +19,25 @@
 
 
     <div class="row">
-  
-      <div class="col-md-4">
-        <div class="fakedata" 
-        ng-repeat="data in fakeData | filter:title"
-        ng-click="selectData(data, $index)">
-          <p>{{data.title}}</p>
+        <div class="col-md-4">
+          <div class="list-data"
+          ng-repeat="data in fakeData | orderBy:'-created' | filter: titleFilter"
+          ng-click="selectData(data, $index)">
+            <p>{{data.title}}</p>
+          </div>
         </div>
-      </div>
         
 
       <div class="col-md-8">
-            <div class="panel-body">
-              <dl>
-                <h3>{{selectedData.title}}</h3>
-                <dd>{{selectedData.body}}</dd>
-              </dl>
-            </div>
-            <div class="report" ng-show='!selectedData'>
-              <h1>No Report Selected</h1>
-            </div>
+        <div class="panel-body">
+          <dl>
+            <h3>{{selectedData.title}}</h3>
+            <dd>{{selectedData.body}}</dd>
+          </dl>
+        </div>
+        <div class="report" ng-show='!selectedData'>
+          <h1>No Report Selected</h1>
+        </div>
       </div>
 
     </div>

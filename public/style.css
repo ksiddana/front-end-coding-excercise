@@ -13,7 +13,7 @@ a:hover {
 }
 
 .container-fluid {
-  margin: 0 auto; 
+  margin: 80px auto 0 auto; 
 }
 
 .nav-pills {
@@ -24,6 +24,15 @@ a:hover {
 
 .nav > li > a {
   background-color: #364958;
+}
+
+.list-data {
+  padding: 2px 5px;
+  border-right: 2px solid #EFEFEF;
+}
+
+.list-data p {
+  border-bottom: 2px solid #EFEFEF;
 }
 
 .primary-footer {
